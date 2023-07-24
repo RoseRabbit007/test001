@@ -17,6 +17,12 @@ class StudentView(APIView):
             return Response({"status":"error","data":serializer.errors},status=status.HTTP_400_BAD_REQUEST)
         
 ____________________asdfghjkl______________
+____________________asdfghjkl______________
+____________________asdfghjkl______________
+____________________asdfghjkl______________
+____________________asdfghjkl______________
+____________________asdfghjkl_vvvvv_____________
+
     def get(self,request,id=None):
         if id:
             data=Student.objects.get(id=id)
