@@ -6,7 +6,6 @@ from rest_framework import status
 from django.shortcuts import get_object_or_404
 
 # Create your views here.
-
 class StudentView(APIView):
     def post(self, request):
         serializer=StudentSerializers(data=request.data)
@@ -15,15 +14,7 @@ class StudentView(APIView):
             return Response({"status":"success","data":serializer.data},status=status.HTTP_200_OK)
         else:
             return Response({"status":"error","data":serializer.errors},status=status.HTTP_400_BAD_REQUEST)
-        
-____________________asdfghjkl______________
-____________________asdfghjkl______________
-____________________asdfghjkl______________
-____________________asdfghjkl______________
-____________________asdfghjkl______________
-____________________asdfghjkl_vvvvv_____________
-__________vilas____________________
-p2m
+
 
     def get(self,request,id=None):
         if id:
@@ -48,7 +39,8 @@ p2m
         data.delete()
         return Response({"status":"successfully deleted","data":"data deleted"})
 
-
+class(APIView):
+    new branch
 
     
         
